@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PCGL @ CNU</title>
+  <title>PCGL @ CNU | PCGL @ CNU</title>
   <link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet"/>
 </head>
-<body>
-
-<!-- ── NAVBAR ── -->
-<nav id="navbar">
+<body><nav id="navbar">
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html">PCGL</a>
+    <a class="nav-logo" href="index.html">
+      <img src="assets/logo.png" alt="PCGL" onerror="this.style.display='none'"/>PCGL
+    </a>
     <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="pages/news.html">News</a></li>
-      <li><a href="pages/professor.html">Professor</a></li>
-      <li><a href="pages/members.html">Members</a></li>
-      <li><a href="pages/publications.html">Publications</a></li>
-      <li><a href="pages/research.html">Research</a></li>
-      <li><a href="pages/events.html">Events</a></li>
-      <li><a href="pages/opportunities.html">Opportunities</a></li>
-    </ul>
+    <ul class="nav-links" id="nav-links"><li><a href="index.html" class="active">Home</a></li>
+<li><a href="pages/news.html">News</a></li>
+<li><a href="pages/professor.html">Professor</a></li>
+<li><a href="pages/members.html">Members</a></li>
+<li><a href="pages/publications.html">Publications</a></li>
+<li><a href="pages/research.html">Research</a></li>
+<li><a href="pages/events.html">Events</a></li>
+<li><a href="pages/opportunities.html">Opportunities</a></li></ul>
   </div>
 </nav>
-
-<!-- ── HERO ── -->
-<header class="hero">
-  <div class="hero-overlay"></div>
+<!-- ── HERO CAROUSEL ── -->
+<header class="hero-carousel">
+  <div class="carousel-track" id="carouselTrack">
+    <div class="carousel-slide" style="background-image:url('assets/pcgl-home1.jpg')"></div>
+    <div class="carousel-slide" style="background-image:url('assets/pcgl-home2.jpg')"></div>
+    <div class="carousel-slide" style="background-image:url('assets/professor2.jpg')"></div>
+  </div>
+  <div class="carousel-overlay"></div>
   <div class="hero-content">
+    <div class="hero-logo-wrap">
+      <img src="assets/logo.png" alt="PCGL Logo" class="hero-logo" onerror="this.style.display='none'"/>
+    </div>
     <h1 class="hero-title">PCGL @ CNU</h1>
-    <p class="hero-sub">[ Plant Computational Genomics Lab ]</p>
+    <p class="hero-sub">Plant Computational Genomics Lab</p>
     <p class="hero-kor">충남대학교 식물 빅데이터 유전체 실험실</p>
-    <a href="pages/research.html" class="hero-btn">Explore Research</a>
+    <div class="hero-btns">
+      <a href="pages/research.html" class="hero-btn">Our Research</a>
+      <a href="pages/opportunities.html" class="hero-btn hero-btn-outline">Join Us</a>
+    </div>
+  </div>
+  <div class="carousel-controls">
+    <button class="carousel-btn" id="carouselPrev"><i class="fas fa-chevron-left"></i></button>
+    <div class="carousel-dots" id="carouselDots"></div>
+    <button class="carousel-btn" id="carouselNext"><i class="fas fa-chevron-right"></i></button>
   </div>
 </header>
 
@@ -45,17 +57,13 @@
     <img src="assets/cnu-logo.png" alt="CNU Logo" onerror="this.style.display='none'"/>
   </div>
   <div class="welcome-text">
-    <h2>Welcome to PCGL in Chungnam National University!</h2>
-    <p>
-      Our lab aims to build crop genomic big data through a multidisciplinary approach
-      including genomics, phenomics, and bioinformatics, and to develop AI-based predictive
-      breeding technology. Through this, we aim to secure the sustainability of future food
-      production and contribute to human health and well-being.
-    </p>
-    <p>
-      Members of the PCGL study bioinformatics, plant genomics, and plant genetics.
-      We always welcome those who are interested and passionate in these fields.
-    </p>
+    <h2>Welcome to PCGL<br/>in Chungnam National University!</h2>
+    <p>Our lab aims to build crop genomic big data through a multidisciplinary approach including
+    <strong>genomics, phenomics, and bioinformatics</strong>, and to develop
+    <strong>AI-based predictive breeding technology</strong>. Through this, we aim to secure the
+    sustainability of future food production and contribute to human health and well-being.</p>
+    <p>Members of the PCGL study bioinformatics, plant genomics, and plant genetics.
+    We always welcome those who are interested and passionate in these fields.</p>
     <a href="pages/members.html" class="btn-primary">Meet Our Team →</a>
   </div>
 </section>
@@ -65,26 +73,14 @@
   <div class="container">
     <h2 class="section-title">Research Areas</h2>
     <div class="cards">
-      <div class="card">
-        <i class="fas fa-dna card-icon"></i>
-        <h3>Plant Genomics</h3>
-        <p>Genome assembly, annotation, and comparative genomics of crop species.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-database card-icon"></i>
-        <h3>Big Data &amp; Bioinformatics</h3>
-        <p>Building large-scale genomic databases and developing analysis pipelines.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-robot card-icon"></i>
-        <h3>AI-based Breeding</h3>
-        <p>Machine learning models for predictive breeding and phenotype analysis.</p>
-      </div>
-      <div class="card">
-        <i class="fas fa-seedling card-icon"></i>
-        <h3>Phenomics</h3>
-        <p>High-throughput plant phenotyping integrated with genomic data.</p>
-      </div>
+      <div class="card"><i class="fas fa-dna card-icon"></i><h3>Plant Genomics</h3>
+        <p>Genome assembly, annotation, comparative genomics and evolutionary study of crop species.</p></div>
+      <div class="card"><i class="fas fa-robot card-icon"></i><h3>AI-based Digital Breeding</h3>
+        <p>Machine learning and deep learning models for genomic selection and predictive breeding.</p></div>
+      <div class="card"><i class="fas fa-database card-icon"></i><h3>Big Data &amp; Bioinformatics</h3>
+        <p>Large-scale genomic database construction and computational pipeline development.</p></div>
+      <div class="card"><i class="fas fa-seedling card-icon"></i><h3>Phenomics</h3>
+        <p>High-throughput plant phenotyping integrated with multi-omics data.</p></div>
     </div>
   </div>
 </section>
@@ -93,28 +89,33 @@
 <section class="news-preview container">
   <h2 class="section-title">Latest News</h2>
   <ul class="news-list">
-    <li><span class="news-date">2025.03</span> New paper accepted — update this in <code>pages/news.html</code></li>
-    <li><span class="news-date">2025.02</span> Welcome new lab members!</li>
-    <li><span class="news-date">2025.01</span> PCGL presents at international conference.</li>
+    <li><a href="pages/news-articles/world-top2-2025.html">
+      <span class="news-tag notice">NOTICE</span><span class="news-date">Oct. 2025</span>
+      김창수 교수, 스탠퍼드대 &amp; Elsevier 공동 발표 '세계 상위 2% 연구자' 선정</a></li>
+    <li><a href="pages/news-articles/bric-2025.html">
+      <span class="news-tag notice">NOTICE</span><span class="news-date">Oct. 2025</span>
+      BRIC 한빛사 '상위피인용논문' 등재</a></li>
+    <li><a href="pages/news-articles/agrisynbio-2025.html">
+      <span class="news-tag notice">NOTICE</span><span class="news-date">Aug. 2025</span>
+      충남대, '농업 합성생물학 혁신 인력양성사업단' 출범</a></li>
+    <li><a href="pages/news-articles/magazine-2025.html">
+      <span class="news-tag interview">INTERVIEW</span><span class="news-date">Feb. 2025</span>
+      '디지털 육종'으로 종자강국으로 가는 지름길 연다</a></li>
+    <li><a href="pages/news-articles/award-mafra-2024.html">
+      <span class="news-tag award">AWARD</span><span class="news-date">Dec. 2024</span>
+      김창수 교수, 농림축산식품부 장관 표창 수상</a></li>
   </ul>
   <a href="pages/news.html" class="btn-outline">All News →</a>
 </section>
-
-<!-- ── FOOTER ── -->
 <footer>
   <div class="container footer-inner">
-    <div>
-      <strong>PCGL — Plant Computational Genomics Lab</strong><br/>
+    <div><strong>PCGL — Plant Computational Genomics Lab</strong><br/>
       Chungnam National University, Daejeon, Republic of Korea<br/>
-      <a href="mailto:pcgl@cnu.ac.kr">pcgl@cnu.ac.kr</a>
-    </div>
+      <a href="mailto:changsookim@cnu.ac.kr">changsookim@cnu.ac.kr</a></div>
     <div class="footer-links">
       <a href="https://github.com/pcglcnu" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </div>
   <p class="footer-copy">© 2025 PCGL @ CNU. All rights reserved.</p>
 </footer>
-
-<script src="js/main.js"></script>
-</body>
-</html>
+<script src="js/main.js"></script></body></html>
