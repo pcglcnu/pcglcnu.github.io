@@ -1,0 +1,94 @@
+[
+    {
+        "year" : 2026,
+        "papers" : ["Jeon D, Lee S, Choi S, Paterson AH*, Kim C*  Genome stabilization in the neotetraploid wasabi (Eutrema japonicum): subgenome dominance and extensive chromosomal rearrangements, BMC Plant Biology",
+                    "Jeon D, Choi C, Park JH, Kang CS, Kim JY, Kim C*. Genomic selection for multi-trait crop improvement in wheat (Triticum aestivum L.): a practical modeling approach. BMC Plant Biology",
+                    "Lee H, Kang Y, Kim C*, Transcriptomic Plasticity Through Alternative Splicing Shapes Salt Stress Responses in Korean Sorghum, Plant Physiology and Biochemistry; 111060."
+                ]
+    },
+    {
+        "year" : 2025,
+        "papers" : ["Sung Y, Kim C*, Profiles of gene expression at different time points under salt-stress in Triticum aestivum L., Plant Breed. Biotech. 13.131~155",
+                    "Choi S, Yoon YM, Kim C*. Genetic Exploration of β-glucan and Cellulose Synthesis in Barley, Korean Society of Breeding Science 57 (2), 159-173",
+                    "Jeon D, Kang Y, Lim Y, Lee K, Cheon KS, Lee T, Shim D, Kim C*. The first application of genomic selection for tree morphological traits in Pinus koraiensis using markers identified through a genome-wide association study, Forestry: An International Journal of Forest Research, 2025;, cpaf016.",
+                    "Choi S, Kang Y, Kim C*. Chromosome-level genome assembly of Salvia sclarea. Sci Data. 2025;12(1):14.",
+                    "Lee S, Kim C*. Chromosome-scale genome assembly of Korean goosegrass (Eleusine indica). Sci Data. 2025;12(1):156."
+                ]
+    },
+    {
+        "year" : 2024,
+        "papers" : ["Sung Y, Kim K, Park J, Kang S, Park C, Cho S, Kim C* . Identification and characterization of a novel Wx-B1 allele in a waxy wheat (Triticum aestivum L.). Plant Biotechnol Rep. 2024;18(6):719-33.",
+                    "Jeon D, Sung YJ, Kim C*. High-quality Chromosomal-Level Genome Assembly of the Wasabi (Eutrema japonicum) 'Magic'. Sci Data. 2024;11(1):1044.",
+                    "Jeon D, Kim C*. Polyploids of Brassicaceae: Genomic Insights and Assembly Strategies. Plants. 2024;13(15)."
+                ]
+    },
+    {
+        "year" : 2023,
+        "papers" : ["Kim H, Kang Y, Joo W, Kim C*. Phylogenetic analysis of Lamiaceae based on transcriptome data. Plant Biotechnol Rep. 2023;17(6):905-15.",
+                    "Choi S., Seo JS., Ahn JW., Jeon D, Kim C*. Alteration of gene expression profiles in the mutant line of Sorghum bicolor. J. Crop Sci. Biotechnol. 2023;26, 537–546.",
+                    "Lee JS, Bae SJ, Kim JS, Kim C*, Kang BC*. A streamlined guide RNA screening system for genome editing in Sorghum bicolor. Plant Methods. 2023;19(1):90.",
+                    "Kim KD, Vaughn J, Kim C*. Editorial: Digitizing plant breeding: big data meets genetic mapping. Front Plant Sci. 2023;14:1278580.",
+                    "Kang Y, Choi C, Kim JY, Min KD, Kim C*. Optimizing genomic selection of agricultural traits using K-wheat core collection. Front Plant Sci. 2023;14:1112297.",
+                    "Jeon D, Kim JB, Kang BC, Kim C*. Deciphering the Genetic Mechanisms of Salt Tolerance in Sorghum bicolor L.: Key Genes and SNP Associations from Comparative Transcriptomic Analyses. Plants. 2023;12(14).",
+                    "Jeon D, Kang Y, Lee S, Choi S, Sung Y, Lee TH, Kim C*. Digitalizing breeding in plants: A new trend of next-generation breeding based on genomic prediction. Front Plant Sci. 2023;14:1092584."
+                ]
+    },
+    {
+        "year" : 2022,
+        "papers" : ["Park JE, Kang Y, Han GD, Yildiz M, Kim SH, Kim C* Diversity study of common buckwheat germplasm in the Republic of Korea using GBS. Plant Biotechnol Rep. 2022;16(6):799-803.",
+                    "Lee S, Jeon D, Choi S, Kang YN, Seo S, Kwon S, Kim C*. Expression Profile of Sorghum Genes and Cis-Regulatory Elements under Salt-Stress Conditions. Plants. 2022;11(7).",
+                    "Jeon D, Lee S, Choi S, Kang Y, Kim C*. Identification of SNPs and Candidate Genes Associated with Salt Stress in Two Korean Sorghum Cultivars and Understanding Selection Pressures in the Breeding Process. Agronomy. 2022;12(10).",
+                    "Choi S, Kang Y, Lee S, Jeon DH, Seo S, Lee TH, Kim C*. Physio-chemical and co-expression network analysis associated with salt stress in sorghum. Front Biosci-Landmrk. 2022;27(2).",
+                    "Jeon D, Lim Y, Kang Y, Park C, Lee D, Park J, Kim C*. Transcriptomic Analysis of Triticum aestivum under Salt Stress Reveals Change of Gene Expression. KOREAN JOURNAL OF CROP SCIENCE. 2022;67(1):41-52. (2-12)"
+                ]
+    },
+    {
+        "year" : 2021,
+        "papers" : ["Sung YJ, Oh HW, Kang Y, Kim C*. Evolution and Breeding of Members of Pooideae Subfamily: Focusing on Upland Cereal Crops. KOREAN JOURNAL OF CROP SCIENCE. 2021;66(3):220-39."
+                ]
+    },
+    {
+        "year" : 2020,
+        "papers" : ["Son JH, Chun J, Yang J, Choi C, Kim KH, Kim KM, Kim C*, Kang CS*. Distribution of Dwarf Genes and Genetic Diversity in Korean Wheat Landraces for Stem Length. Int J Agric Biol. 2020;24(6):1601-6.",
+                    "Son JH, Choi C, Chun J, Kim KH, Kim KM, Kim YJ, Kim C* Kang CS*. Evaluation of Functional Markers Related to Agronomic Traits for Selecting Efficient Marker Sets in Wheat. Int J Agric Biol. 2020;23(2):340-8.",
+                    "Kim KD, Kang Y, Kim C*. Application of Genomic Big Data in Plant Breeding: Past, Present, and Future. Plants-Basel. 2020;9(11).",
+                    "Kim K, Kang Y, Lee SJ, Choi SH, Jeon DH, Park MY, Kim C*. Quantitative Trait Loci (QTLs) Associated with Microspore Culture in Raphanus sativus L. (Radish). Genes-Basel. 2020;11(3).",
+                    "Choi SC, Chung YS, Lee YG, Kang Y, Park YJ, Park SU, Kim C*. Prediction of Dhurrin Metabolism by Transcriptome and Metabolome Analyses in. Plants-Basel. 2020;9(10).",
+                    "Jeon D, Lee S, Choi S, Seo S, Kim C*. Effect of salt stress on the anthocyanin content and associated genes in Sorghum bicolor L. Korean Journal of Agricultural Science. 2020;47(1):105-17.",
+                    "Kim K, Choi S-H, Kim C*. Concentration-and Time-Dependent Effect of Disinfectant Treatment on Sorghum Seeds. KOREAN JOURNAL OF CROP SCIENCE. 2020;65(2):124-9.",
+                    "Lee S, Choi S, Jeon D, Kang Y, Kim C*. Evolutionary impact of whole genome duplication in Poaceae family. J Crop Sci Biotechn. 2020:1-13."
+                ]
+    },
+    {
+        "year" : 2019,
+        "papers" : ["Lee YG, Choi SC, Kang Y, Kim KM, Kang CS, Kim C*. Constructing a Reference Genome in a Single Lab: The Possibility to Use Oxford Nanopore Technology. Plants-Basel. 2019;8(8).",
+                    "Kang YN, Kang CS, Kim C*. History of Nucleotide Sequencing Technologies: Advances in Exploring Nucleotide Sequences from Mendel to the 21st Century. Hortic Sci Technol. 2019;37(5):549-58.",
+                    "Choi SC, Kim JM, Lee YG, Kim C*. Antioxidant Activity and Contents of Total Phenolic Compounds and Anthocyanins According to Grain Colour in Several Varieties of Sorghum bicolor (L.) Moench. Cereal Res Commun. 2019;47(2):228-38."
+                ]
+    },
+    {
+        "year" : 2018,
+        "papers" : ["Chung YS, Lee YG, Silva RR, Park S, Park MY, Lim YP, Kim C*. Potential SNPs related to microspore culture in Raphanus sativas based on a single-marker analysis. Can J Plant Sci. 2018;98(5):1072-83.",
+                    "Chung YS, Jun TH, Lee YG, Jung JA, Won SY, Hwang YJ, Kim C*. A Genetic Linkage Map of Wild Chrysanthemum Species Indigenous to Korea and its Challenges. Int J Agric Biol. 2018;20(12):2708-16.",
+                    "Chung YS, Kim J, Kim C*. Breeding of lignocellulosic bioethanol feedstock. J Crop Sci Biotechn. 2018;21:1-12.",
+                    "Lee YG, Choi SC, Kang Y, Kang C-S, Kim C*. Genomics approach to identify the cause of the missing omega-5 gliadin protein in O-free wheat. Plant breeding and biotechnology. 2018;6(4):413-25."
+                ]
+
+    },
+    {
+        "year" : 2017,
+        "papers" : ["Chung YS, Choi SC, Silva RR, Kang JW, Eom JH, Kim C*. Case study: Estimation of sorghum biomass using digital image analysis with Canopeo. Biomass Bioenerg. 2017;105:207-10.",
+                    "Chung YS, Choi SC, Jun TH, Kim C*. Genotyping-by-Sequencing: a Promising Tool for Plant Genetics Research and Breeding. Hortic Environ Biote. 2017;58(5):425-31.",
+                    "Kim C, Lee JH, Chung YS, Choi SC, Guo H, Lee TH, et al. Characterization of twenty Camelina spp. accessions using single nucleotide polymorphism genotyping. Hortic Environ Biote. 2017;58(2):187-94.",
+                    "Chung YS, Jun T, Kim C*. Digestion efficiency differences of restriction enzymes frequently used for genotype-by-sequencing technology. Korean Journal of Agricultural Science. 2017;44(3):318-24.",
+                    "Chung, Y. S., Jun, T. & Kim C*. Digestion efficiency differences of restriction enzymes frequently used for genotype-by-sequencing technology. Korean Journal of Agricultural Science 44, 318-324 (2017). "
+                ]
+    },
+    {
+        "year" : 2016,
+        "papers" : ["Choi SC, Chung YS, Kim C*. Perspectives on the genomics research of important crops in the tribe Andropogoneae: Focusing on the Saccharum complex. Korean Journal of Agricultural Science. 2016;43(1):1-13.",
+                    "Kim, C. et al. Application of genotyping by sequencing technology to a variety of crop breeding programs. Plant Science 242, 14-22 (2016). "
+                ]
+    }
+
+]

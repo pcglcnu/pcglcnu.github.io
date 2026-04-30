@@ -1,0 +1,79 @@
+<!-- article 본문 (news의 하위페이지) backbone 파일입니다. 필요시 복붙하여 내용을 추가하시면 됩니다! -->
+<!-- 수작업시 파일 경로를 유의해주세요! articles html 파일은 pages>news-articles 내에 존재합니다. 따라서 파일 접근시 '../' 아닌 '../../' 가 필요합니다. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> 여기에 article 제목을 써주세요 | PCGL @ CNU</title>
+  <link rel="stylesheet" href="../../css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@700;900&display=swap" rel="stylesheet"/>
+</head>
+<body><nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="../../index.html">
+      <img src="../../assets/logo.png" alt="PCGL" onerror="this.style.display='none'"/>PCGL
+    </a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    <ul class="nav-links" id="nav-links"><li><a href="../index.html">Home</a></li>
+<li><a href="../../pages/news.html" class="active">News</a></li>
+<li><a href="../../pages/professor.html">Professor</a></li>
+<li><a href="../../pages/members.html">Members</a></li>
+<li><a href="../../pages/publications.html">Publications</a></li>
+<li><a href="../../pages/research.html">Research</a></li>
+<li><a href="../../pages/events.html">Events</a></li>
+<li><a href="../../pages/opportunities.html">Opportunities</a></li></ul>
+  </div>
+</nav>
+<!-- 이 윗부분은 페이지 상단의 PCGL, home, professor 등의 버튼 바를 나타냅니다! 윗부분에서 추가할 항목은 기사 제목만 있을 것입니다. -->
+
+<div class="page-hero page-hero-sm" style="background-image:url('../../assets/hero-news.jpg')"><div class="page-hero-overlay"></div><div class="page-hero-content"><span class="news-tag notice" style="margin-bottom:.6rem;display:inline-block;">NOTICE</span><h1 style="font-size:1.7rem;">김창수 교수, 스탠퍼드대 &amp; Elsevier 공동 발표 '세계 상위 2% 연구자' 선정</h1><p style="opacity:.8;margin-top:.4rem;">Oct. 2025</p></div></div><section class="container"><a href="../news.html" style="color:#2e7d32;display:inline-block;margin-bottom:2rem;font-weight:700;">← Back to News</a>
+  <div class = "article-body">
+
+      <p> article 요약 부분입니다. <strong>strong 안에 글을 쓰면 bold체로 글이 써집니다. 강조할 문장은 여기에 넣어주세요 </strong></p>
+
+      <div class = "news-inner-img">
+        <img src = "../../assets/news-pictures/synthetic.jpg" alt = "synthetic" onerror = "this.style.display='none'"/>
+        <!-- assets 폴더 내 news-pictures 폴더에는 news의 사진 파일이 들어있습니다. ../../assets/news-pictures/여기.jpg <<- '여기'라고 써져있는 부분에 사진파일명을 입력해주세요.
+             alt는 어떤 단어로 사용하셔도 무관합니다. 저는 통일성을 위해 사진 파일명으로 해두었습니다.-->
+      </div>
+
+    <p> <- 얘는 글(텍스트)의 시작을 의미합니다.
+
+    여기에는 article 내용이 들어갑니다. <br/>은 줄바꿈(enter)을 의미합니다. 
+    <i>는 이탤릭체를 의미합니다.</i>
+    혹시 텍스트에 색이 필요하다면, <span style = "color:#2581FA"> 이 서식 안에 글을 쓰시면 됩니다. </span>
+
+    얘는 글(텍스트)가 끝났다는 것을 의미합니다. -> 
+    </p>
+
+    <p style="color:#666;">출처: 여기에 출처를 써주세요. </p>
+    <p style="color:#666;">본문기사: <a href="http://www.ccnnews.co.kr/news/articleView.html?idxno=382793" target = "_blank"> <!--href는 하이퍼링크를 의미합니다. href = "여기에 링크를 추가해주세요"-->
+      <i>바로가기</i> 
+    </a> <!-- 화면에서 이탤릭체로 나타난 '바로가기'를 누르면 href 옆의 링크로 이동할 수 있습니다. </a>가 바로가기 뒤에 있다는 것을 유의해주세요! -->
+  </p>
+
+  </div>
+</section>
+
+<!-- 이 밑부분은 페이지 하단의 검정 배경과 깃허브 링크, 교수님 메일 등을 포함하고 있습니다. -->
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <strong>PCGL — Plant Computational Genomics Lab</strong><br/>
+      Chungnam National University, Daejeon, Republic of Korea<br/>
+      <a href="mailto:changsookim@cnu.ac.kr">changsookim@cnu.ac.kr</a>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/pcglcnu" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2025 PCGL @ CNU. All rights reserved.</p>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>
