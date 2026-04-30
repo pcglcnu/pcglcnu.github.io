@@ -6,7 +6,7 @@ img{max-width:100%;}
 
 /* NAVBAR */
 #navbar{position:fixed;top:0;width:100%;z-index:1000;background:rgba(26,26,46,.93);backdrop-filter:blur(6px);transition:background .3s;}
-.nav-inner{max-width:1250px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:62px;}
+.nav-inner{max-width:1250px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:0 24px; height:62px;}
 .nav-logo{display:flex;align-items:center;gap:8px;font-family:"Montserrat",sans-serif;font-size:1.3rem;color:#fff;font-weight:900;}
 .nav-logo img{height:36px;width:auto;}
 .nav-links{list-style:none;display:flex;gap:2px;}
@@ -56,7 +56,7 @@ img{max-width:100%;}
 .page-hero-sm{padding:100px 24px 44px;}
 
 /* CONTAINER */
-.container{max-width:1100px;margin:auto;padding:60px 24px;}
+.container{max-width:1100px;margin:0 auto;padding:60px 24px;}
 
 /* WELCOME */
 .welcome{display:flex;gap:44px;align-items:center;}
@@ -103,28 +103,31 @@ img{max-width:100%;}
   box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;color:var(--text);}
 .news-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.13);}
 .news-card-img{flex-shrink:0;width:80px;height:80px;border-radius:10px;
-  background:linear-gradient(135deg,#e8f5e9,#c8e6c9);
+  background:linear-gradient(135deg,#fff,#fff);
   display:flex;align-items:center;justify-content:center;font-size:2rem;color:var(--green);}
 .news-card-body h3{font-size:1rem;margin:.4rem 0;line-height:1.5;}
 .news-card-body p{font-size:.85rem;color:#666;line-height:1.5;}
 .news-card-meta{display:flex;align-items:center;gap:8px;margin-bottom:2px;}
 .news-date-sm{font-size:.78rem;color:#999;}
-.article-body{max-width:800px;line-height:1.9;color:#444;font-size:.97rem;}
+.article-body{max-width :0 auto; margin: 0 auto;line-height:1.9;color:#444;font-size:.97rem;}
 .article-body p{margin-bottom:1.2rem;}
 .article-body h2,.article-body h3{color:var(--dark);margin-bottom:.8rem;}
 .article-body ul{padding-left:1.4rem;margin-bottom:1rem;}
 .article-body li{margin-bottom:.4rem;}
+.news-inner-img{flex:0 0 100%;background:none;}
 
 /* PROFESSOR */
-.prof-wrap{display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap;max-width:860px;margin:auto;}
-.prof-photo img{width:210px;border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,.15);}
+.prof-wrap{display:flex; gap:48px; align-items:flex-start; flex-wrap:wrap; max-width:860px; margin:auto;}
+.prof-info{flex: 1; min-width: 250px;}
+.prof-photo{flex: 0 0 220px;}
+.prof-photo img{width:100%; height: auto; max-width:220px; border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,.15);}
 .prof-name{font-size:1.8rem;margin-bottom:.3rem;}
 .prof-name span{font-size:1.1rem;color:#666;font-weight:400;margin-left:.5rem;}
 .prof-title{color:var(--green);font-weight:700;margin-bottom:.3rem;}
 .prof-dept{color:#666;font-size:.9rem;margin-bottom:1rem;line-height:1.6;}
 .prof-contact a{color:var(--green);}
 .prof-contact p{margin:.3rem 0;}
-.prof-section{margin-top:1.5rem;}
+.prof-section{max-width : 860px; margin-top:1.5rem; padding-top: 1.5rem; border-top: 1px solid #ddd;}
 .prof-section h3{font-size:1rem;color:var(--dark);border-left:3px solid var(--green);
   padding-left:10px;margin-bottom:.6rem;}
 .prof-section ul{padding-left:1.2rem;color:#555;line-height:2;}
@@ -160,11 +163,15 @@ img{max-width:100%;}
 .research-intro p{margin-bottom:1rem;}
 .research-area{display:flex;gap:28px;background:#fff;border-radius:14px;padding:32px;
   box-shadow:var(--shadow);margin-bottom:28px;}
-.research-area-icon{font-size:2.5rem;color:var(--green);flex-shrink:0;padding-top:4px;}
+.research-area.reverse{flex-direction : row-reverse;}
 .research-area-text h2{font-size:1.3rem;color:var(--dark);margin-bottom:.8rem;}
 .research-area-text p{line-height:1.8;color:#555;margin-bottom:.8rem;font-size:.93rem;}
 .research-papers{margin-top:1rem;font-size:.87rem;}
 .research-papers ul{padding-left:1.2rem;color:#666;line-height:1.9;margin-top:.4rem;}
+.research-gallery{display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 1.5rem;}
+.research-items{text-align: center; flex: 0 0 260px;}
+.research-items img{width:100%; height: 180px; border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,.15);}
+.research-items p{font-size: 12px; color: #666; margin-top: 6px; line-height: 1.4;}
 
 /* OPPORTUNITIES */
 .opp-logo{margin:0 auto 2rem;text-align:center;}
@@ -197,4 +204,38 @@ footer{background:var(--navy);color:#ccc;padding:40px 0 16px;}
   .prof-wrap{flex-direction:column;}
   .research-area{flex-direction:column;}
   .footer-inner{flex-direction:column;text-align:center;}
+}
+
+/* ── EVENT CARD GRID ── */
+.events-section {padding-top: 60px; padding-bottom: 70px;}
+.event-card-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto;}
+.event-card {background: #fff; border-radius: 14px; box-shadow: var(--shadow); overflow: hidden; transition: transform .2s, box-shadow .2s;}
+.event-card:hover {transform: translateY(-4px);}
+.event-card-title {font-size: 1.05rem; color: var(--dark); padding: 18px 18px 10px; margin: 0; text-align: center;}
+
+/* ── EVENT CARD CAROUSEL ── */
+.event-card-carousel {position: relative; width: 250px; height: 175px; margin: 0 auto 14px; overflow: hidden; border-radius: 12px; background: #0d1b2a;}
+.event-card-carousel-track { display: flex; width: 100%; height: 100%; transition: transform .4s ease;}
+
+.event-card-carousel-slide {flex: 0 0 100%; height: 100%; background-size: cover; background-position: center; background-color: #0d1b2a;}
+.event-card-carousel-slide img {width: 100%; height: 100%; object-fit: cover; display: block;}
+
+.event-card-carousel-btn {position: absolute; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; border: none; border-radius: 50%; background: rgba(0, 0, 0, .38); color: #fff; font-size: .75rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s; z-index: 2;}
+
+.event-card-carousel-btn:hover { background: rgba(0, 0, 0, .62);}
+.event-card-carousel-prev { left: 8px;}
+
+.event-card-carousel-next {right: 8px;}
+
+.event-card-carousel-dots { position: absolute; left: 0; right: 0; bottom: 8px; display: flex; justify-content: center; gap: 6px; z-index: 2;}
+
+.event-card-carousel-dot {width: 7px; height: 7px; border: none; border-radius: 50%; background: rgba(255, 255, 255, .5); cursor: pointer; padding: 0;}
+
+.event-card-carousel-dot.active { background: #fff; transform: scale(1.15);}
+
+.event-card-desc {padding: 0 18px 20px; margin: 0; font-size: .88rem; color: #666; line-height: 1.6; text-align: center;}
+
+/* 모바일에서는 카드 내부 carousel이 화면보다 커지지 않게 */
+@media (max-width: 360px) {
+  .event-card-carousel {width: 100%; height: 175px; border-radius: 0;}
 }
