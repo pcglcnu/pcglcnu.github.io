@@ -170,7 +170,7 @@ img{max-width:100%;}
 .research-papers ul{padding-left:1.2rem;color:#666;line-height:1.9;margin-top:.4rem;}
 .research-gallery{display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 1.5rem;}
 .research-items{text-align: cenclearter; flex: 0 0 260px;}
-.research-items img{width:100%; height:auto; border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,.15);}
+.research-items img{width:100%; aspect-ratio: 1/1; object-fit: cover; border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,.15);}
 .research-items p{font-size: 12px; color: #666; margin-top: 6px; line-height: 1.4;}
 
 /* OPPORTUNITIES */
