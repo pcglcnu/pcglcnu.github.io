@@ -702,9 +702,10 @@ footer{
 .footer-copy{
   color:rgba(252,251,248,.56);
 }
-.home-page .hero-carousel{
-  height:min(520px,58vh);
-  min-height:420px;
+.home-page header.hero-carousel{
+  height:min(480px,52vh) !important;
+  min-height:420px !important;
+  max-height:500px;
 }
 @media(max-width:768px){
   .nav-links{
@@ -718,9 +719,9 @@ footer{
   .page-hero{
     padding:40px 20px 22px;
   }
-  .home-page .hero-carousel{
-    height:min(380px,52vh);
-    min-height:300px;
+  .home-page header.hero-carousel{
+    height:min(340px,46vh) !important;
+    min-height:280px !important;
   }
   .news-card{
     flex-direction:column;
@@ -763,15 +764,48 @@ footer{
   margin:0 18px;
   border-radius:12px;
   background:#1c1c1c;
+  cursor:pointer;
+}
+.event-card-carousel::after{
+  content:"View photos";
+  position:absolute;
+  inset:auto 12px 12px auto;
+  padding:5px 10px;
+  border-radius:9999px;
+  background:rgba(28,28,28,.72);
+  color:#fcfbf8;
+  font-size:.75rem;
+  opacity:0;
+  transition:opacity .2s;
+  pointer-events:none;
+}
+.event-card-carousel:hover::after{
+  opacity:1;
+}
+.event-card-carousel-track{
+  display:block;
+  height:100%;
+  transform:none !important;
+  transition:none;
 }
 .event-card-carousel-slide{
   height:100%;
+}
+.event-card-carousel-slide:not(:first-child),
+.event-card-carousel-btn,
+.event-card-carousel-dots{
+  display:none !important;
 }
 .event-card-carousel-slide img{
   width:100%;
   height:100%;
   object-fit:cover;
   cursor:zoom-in;
+  transition:transform .25s,opacity .25s;
+}
+.event-card-carousel:hover .event-card-carousel-slide:first-child img{
+  transform:scale(1.03);
+  opacity:.94;
 }
 .image-lightbox{
   position:fixed;
@@ -786,9 +820,37 @@ footer{
 .image-lightbox.open{
   display:flex;
 }
-.image-lightbox img{
-  max-width:min(92vw,1100px);
+.image-lightbox-panel{
+  width:min(1100px,92vw);
   max-height:88vh;
+  overflow:auto;
+  border-radius:16px;
+  background:#fbfaf6;
+  border:1px solid rgba(252,251,248,.2);
+}
+.image-lightbox-header{
+  position:sticky;
+  top:0;
+  z-index:1;
+  padding:20px 24px 16px;
+  background:#fbfaf6;
+  border-bottom:1px solid #eceae4;
+}
+.image-lightbox-title{
+  margin:0;
+  color:#111111;
+  font-size:1.35rem;
+}
+.image-lightbox-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+  padding:20px 24px 24px;
+}
+.image-lightbox-gallery img{
+  width:100%;
+  height:auto;
+  display:block;
   border-radius:12px;
   background:#fcfbf8;
 }

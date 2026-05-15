@@ -49,79 +49,7 @@ window.addEventListener("scroll", () => {
 
   resetTimer();
 })();
-// Event Card Carousel
-(function () {
-  const carousels = document.querySelectorAll(".event-card-carousel");
-  if (!carousels.length) return;
-
-  carousels.forEach((carousel) => {
-    const track = carousel.querySelector(".event-card-carousel-track");
-    const slides = carousel.querySelectorAll(".event-card-carousel-slide");
-    const prevBtn = carousel.querySelector(".event-card-carousel-prev");
-    const nextBtn = carousel.querySelector(".event-card-carousel-next");
-    const dotsWrap = carousel.querySelector(".event-card-carousel-dots");
-
-    if (!track || slides.length === 0) return;
-
-    const total = slides.length;
-    let current = 0;
-    let timer;
-    const dots = [];
-
-    track.style.transform = "translateX(0%)";
-
-    if (dotsWrap) {
-      slides.forEach((_, i) => {
-        const dot = document.createElement("button");
-        dot.type = "button";
-        dot.className = "event-card-carousel-dot" + (i === 0 ? " active" : "");
-        dot.addEventListener("click", () => goTo(i));
-        dotsWrap.appendChild(dot);
-        dots.push(dot);
-      });
-    }
-
-    function goTo(idx) {
-      current = (idx + total) % total;
-      track.style.transform = `translateX(-${current * 100}%)`;
-
-      dots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === current);
-      });
-
-      resetTimer();
-    }
-
-    function resetTimer() {
-      clearInterval(timer);
-
-      if (total > 1) {
-        timer = setInterval(() => {
-          goTo(current + 1);
-        }, 4000);
-      }
-    }
-
-    if (prevBtn) {
-      prevBtn.addEventListener("click", () => goTo(current - 1));
-    }
-
-    if (nextBtn) {
-      nextBtn.addEventListener("click", () => goTo(current + 1));
-    }
-
-    carousel.addEventListener("mouseenter", () => clearInterval(timer));
-    carousel.addEventListener("mouseleave", resetTimer);
-
-    if (total <= 1) {
-      if (prevBtn) prevBtn.style.display = "none";
-      if (nextBtn) nextBtn.style.display = "none";
-      if (dotsWrap) dotsWrap.style.display = "none";
-    }
-
-    resetTimer();
-  });
-})();
+// Event cards remain static in grid view; all images are used by the gallery modal below.
 
 //publications 불러오기//
 const container = document.getElementById("pub-container");
@@ -153,16 +81,16 @@ fetch("publications.json")
   });
 }
 
-// Event image lightbox
+// Event gallery lightbox
 (function () {
-  const eventImages = document.querySelectorAll(".event-card-carousel-slide img");
-  if (!eventImages.length) return;
+  const eventCards = document.querySelectorAll(".event-card");
+  if (!eventCards.length) return;
 
   const lightbox = document.createElement("div");
   lightbox.className = "image-lightbox";
   lightbox.setAttribute("role", "dialog");
   lightbox.setAttribute("aria-modal", "true");
-  lightbox.setAttribute("aria-label", "Expanded event image");
+  lightbox.setAttribute("aria-label", "Event photo gallery");
 
   const closeBtn = document.createElement("button");
   closeBtn.type = "button";
@@ -170,16 +98,38 @@ fetch("publications.json")
   closeBtn.setAttribute("aria-label", "Close image");
   closeBtn.innerHTML = "&times;";
 
-  const image = document.createElement("img");
-  image.alt = "";
+  const panel = document.createElement("div");
+  panel.className = "image-lightbox-panel";
+
+  const header = document.createElement("div");
+  header.className = "image-lightbox-header";
+
+  const title = document.createElement("h2");
+  title.className = "image-lightbox-title";
+
+  const gallery = document.createElement("div");
+  gallery.className = "image-lightbox-gallery";
 
   lightbox.appendChild(closeBtn);
-  lightbox.appendChild(image);
+  header.appendChild(title);
+  panel.appendChild(header);
+  panel.appendChild(gallery);
+  lightbox.appendChild(panel);
   document.body.appendChild(lightbox);
 
-  function openLightbox(src, alt) {
-    image.src = src;
-    image.alt = alt || "Expanded event image";
+  function openLightbox(card) {
+    const titleText = card.querySelector(".event-card-title")?.innerText.trim() || "Event photos";
+    const images = card.querySelectorAll(".event-card-carousel-slide img");
+    if (!images.length) return;
+
+    title.textContent = titleText;
+    gallery.innerHTML = "";
+    images.forEach((sourceImage) => {
+      const galleryImage = document.createElement("img");
+      galleryImage.src = sourceImage.currentSrc || sourceImage.src;
+      galleryImage.alt = sourceImage.alt || titleText;
+      gallery.appendChild(galleryImage);
+    });
     lightbox.classList.add("open");
     document.body.classList.add("lightbox-open");
     closeBtn.focus();
@@ -188,12 +138,14 @@ fetch("publications.json")
   function closeLightbox() {
     lightbox.classList.remove("open");
     document.body.classList.remove("lightbox-open");
-    image.removeAttribute("src");
+    gallery.innerHTML = "";
   }
 
-  eventImages.forEach((eventImage) => {
-    eventImage.addEventListener("click", () => {
-      openLightbox(eventImage.currentSrc || eventImage.src, eventImage.alt);
+  eventCards.forEach((card) => {
+    const preview = card.querySelector(".event-card-carousel");
+    if (!preview) return;
+    preview.addEventListener("click", () => {
+      openLightbox(card);
     });
   });
 
