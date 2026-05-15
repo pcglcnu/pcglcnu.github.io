@@ -932,6 +932,10 @@ body.lightbox-open{
   color:#fcfbf8;
 }
 .home-hero-image-frame{
+  width:70%;
+  max-width:70%;
+  margin-left:auto;
+  margin-right:auto;
   height:auto;
   overflow:hidden;
   border:1px solid #eceae4;
@@ -951,6 +955,8 @@ body.lightbox-open{
     margin-bottom:22px;
   }
   .home-hero-image-frame{
+    width:100%;
+    max-width:100%;
     border-radius:12px;
   }
 }
@@ -970,7 +976,7 @@ body.lightbox-open{
   box-shadow:none;
 }
 .member-role{
-  background:#1c1c1c;
+  background:#3a3a3a;
   color:#fcfbf8;
   border:none;
   border-radius:9999px;
