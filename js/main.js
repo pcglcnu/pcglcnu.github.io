@@ -152,3 +152,58 @@ fetch("publications.json")
     console.error(err);
   });
 }
+
+// Event image lightbox
+(function () {
+  const eventImages = document.querySelectorAll(".event-card-carousel-slide img");
+  if (!eventImages.length) return;
+
+  const lightbox = document.createElement("div");
+  lightbox.className = "image-lightbox";
+  lightbox.setAttribute("role", "dialog");
+  lightbox.setAttribute("aria-modal", "true");
+  lightbox.setAttribute("aria-label", "Expanded event image");
+
+  const closeBtn = document.createElement("button");
+  closeBtn.type = "button";
+  closeBtn.className = "image-lightbox-close";
+  closeBtn.setAttribute("aria-label", "Close image");
+  closeBtn.innerHTML = "&times;";
+
+  const image = document.createElement("img");
+  image.alt = "";
+
+  lightbox.appendChild(closeBtn);
+  lightbox.appendChild(image);
+  document.body.appendChild(lightbox);
+
+  function openLightbox(src, alt) {
+    image.src = src;
+    image.alt = alt || "Expanded event image";
+    lightbox.classList.add("open");
+    document.body.classList.add("lightbox-open");
+    closeBtn.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+    document.body.classList.remove("lightbox-open");
+    image.removeAttribute("src");
+  }
+
+  eventImages.forEach((eventImage) => {
+    eventImage.addEventListener("click", () => {
+      openLightbox(eventImage.currentSrc || eventImage.src, eventImage.alt);
+    });
+  });
+
+  closeBtn.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && lightbox.classList.contains("open")) {
+      closeLightbox();
+    }
+  });
+})();
