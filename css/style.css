@@ -117,7 +117,7 @@ img{max-width:100%;}
 .news-inner-img{flex:0 0 100%;background:none;}
 
 /* PROFESSOR */
-.prof-wrap{display:flex; gap:48px; align-items:flex-start; flex-wrap:wrap; max-width:860px; margin:auto;}
+.prof-wrap{display:flex; gap:48px; align-items:flex-start; flex-wrap:wrap; max-width:860px; margin:0;}
 .prof-info{flex: 1; min-width: 250px;}
 .prof-photo{flex: 0 0 220px;}
 .prof-photo img{width:100%; height: auto; max-width:220px; border-radius:14px;box-shadow:0 4px 20px rgba(0,0,0,.15);}
@@ -136,9 +136,9 @@ img{max-width:100%;}
 .member-section-title{font-size:1.4rem;color:var(--dark);border-bottom:2px solid var(--green);
   padding-bottom:.4rem;margin:2.5rem 0 1.2rem;}
 .member-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin-bottom:1rem;}
-.member-card{display:flex;gap:16px;background:#fff;border-radius:12px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.07);}
-.member-photo img{width:80px;height:80px;border-radius:50%;object-fit:cover;flex-shrink:0;}
-.member-no-photo{width:80px;height:80px;border-radius:50%;background:#e8f5e9;flex-shrink:0;
+.member-card{display:flex;align-items:flex-start;gap:18px;background:#fff;border-radius:12px;padding:18px;box-shadow:0 2px 10px rgba(0,0,0,.07);}
+.member-photo img{width:116px;height:148px;border-radius:12px;object-fit:cover;flex-shrink:0;}
+.member-no-photo{width:116px;height:148px;border-radius:12px;background:#e8f5e9;flex-shrink:0;
   display:flex;align-items:center;justify-content:center;color:var(--green);font-size:2rem;}
 .member-role{font-size:.72rem;color:var(--green);font-weight:700;background:#e8f5e9;
   padding:2px 8px;border-radius:10px;display:inline-block;margin-bottom:.3rem;}
@@ -965,6 +965,7 @@ body.lightbox-open{
 .prof-wrap{
   gap:52px;
   max-width:980px;
+  margin:0;
 }
 .prof-photo{
   flex:0 0 330px;
@@ -1000,6 +1001,15 @@ body.lightbox-open{
 @media(max-width:768px){
   .prof-wrap{
     gap:28px;
+  }
+  .member-card{
+    align-items:flex-start;
+  }
+  .member-photo img,
+  .member-no-photo{
+    width:min(116px,32vw);
+    height:auto;
+    aspect-ratio:29 / 37;
   }
   .prof-photo{
     flex:0 0 auto;
