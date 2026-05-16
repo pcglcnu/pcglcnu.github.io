@@ -127,6 +127,7 @@ img{max-width:100%;}
 .prof-dept{color:#666;font-size:.9rem;margin-bottom:1rem;line-height:1.6;}
 .prof-contact a{color:var(--green);}
 .prof-contact p{margin:.3rem 0;}
+.prof-scholar-link{display:inline-flex;align-items:center;gap:6px;margin-top:8px;}
 .prof-section{max-width : 860px; margin-top:1.5rem; padding-top: 1.5rem; border-top: 1px solid #ddd;}
 .prof-section h3{font-size:1rem;color:var(--dark);border-left:3px solid var(--green);
   padding-left:10px;margin-bottom:.6rem;}
@@ -896,7 +897,7 @@ body.lightbox-open{
 .home-hero-copy h1{
   margin-bottom:.5rem;
   color:#111111;
-  font-size:clamp(2.4rem,4vw,3.5rem);
+  font-size:clamp(32px,4vw,46px);
   line-height:1.1;
   letter-spacing:-.03em;
 }
@@ -977,13 +978,15 @@ body.lightbox-open{
   box-shadow:none;
 }
 .member-role{
-  background:#3a3a3a;
-  color:#fcfbf8;
+  background:none;
+  color:#1c1c1c;
   border:none;
-  border-radius:9999px;
-  padding:4px 10px;
-  font-size:.78rem;
+  border-radius:0;
+  padding:0;
+  font-size:13px;
+  line-height:1.2;
   font-weight:600;
+  margin-bottom:.35rem;
 }
 .image-lightbox-panel{
   width:min(96vw,1400px);
