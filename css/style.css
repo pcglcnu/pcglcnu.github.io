@@ -692,6 +692,9 @@ footer{
   background:#1c1c1c;
   color:rgba(252,251,248,.8);
 }
+footer strong{
+  color:#fcfbf8;
+}
 .footer-inner a,
 .footer-links a{
   color:rgba(252,251,248,.8);
