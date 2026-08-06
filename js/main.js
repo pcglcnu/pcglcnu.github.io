@@ -54,7 +54,7 @@ window.addEventListener("scroll", () => {
 //publications 불러오기//
 const container = document.getElementById("pub-container");
 if (container){
-fetch("publications.json")
+fetch(`publications.json?v=${Date.now()}`, { cache: "no-store" })
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById("pub-container");
