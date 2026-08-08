@@ -3,7 +3,6 @@
         "year": "Under Review",
         "papers": [
             "Jeon D, Kim C* (2026) OrganelleCleaner: identification and removal of organellar contigs in genome assemblies using graph topology, sequence features, and homology evidence",
-            "Choi S, Jeon D, Lee S, Kim C* (2026) Gene reduction and functional divergence shaping sclareol biosynthesis in <em>Salvia sclarea</em>",
             "Lee S, Jeon D, Choi S, Kim C* (2026) Genome Size Reduction in the Tetraploid Grass <em>Zoysia japonica</em>: Integrating Comparative Genomics Approaches for the Chloridoideae Subfamily",
             "Lim Y, Kang Y, Choi C, Kim JY, Kim C* (2026) Deep learning reveals distributed and LD-structured genomic contributions to wheat phenology beyond GWAS"
         ]
@@ -11,12 +10,13 @@
     {
         "year": 2026,
         "papers": [
-            "Jeon D, Lee S, Choi S, Paterson AH*, Kim C*  Genome stabilization in the neotetraploid wasabi (<em>Eutrema japonicum</em>): subgenome dominance and extensive chromosomal rearrangements, BMC Plant Biology",
-            "Jeon D, Choi C, Park JH, Kang CS, Kim JY, Kim C*. Genomic selection for multi-trait crop improvement in wheat (<em>Triticum aestivum</em> L.): a practical modeling approach. BMC Plant Biology",
-            "Lee H, Kang Y, Kim C*, Transcriptomic Plasticity Through Alternative Splicing Shapes Salt Stress Responses in Korean Sorghum, Plant Physiology and Biochemistry; 111060.",
+            "Choi S, Jeon D, Lee S, Kim C* (2026) Gene reduction and functional divergence shaping sclareol biosynthesis in <em>Salvia sclarea</em>",
+            "Sung Y-J, Jeon D, Kim C*. Chromosome-scale Genome Assembly and Annotation of Anise Hyssop (<em>Agastache foeniculum</em>)",
             "Lee S, Kim C*. Insights into Glyphosate Resistance Mechanisms in <em>Eleusine indica</em>: EPSPS Copy Number and Expression Dynamics. Plant Breeding &amp; Biotechnology.",
             "Kim S, Jeon D, Kim C*. Integrative Phenotypic and Transcriptomic Network Analysis Reveals Ion Homeostasis Associated Modules Underlying Saline Alkaline Tolerance in Sorghum.",
-            "Sung Y-J, Jeon D, Kim C*. Chromosome-scale Genome Assembly and Annotation of Anise Hyssop (<em>Agastache foeniculum</em>)."
+            "Jeon D, Lee S, Choi S, Paterson AH*, Kim C*  Genome stabilization in the neotetraploid wasabi (<em>Eutrema japonicum</em>): subgenome dominance and extensive chromosomal rearrangements, BMC Plant Biology",
+            "Jeon D, Choi C, Park JH, Kang CS, Kim JY, Kim C*. Genomic selection for multi-trait crop improvement in wheat (<em>Triticum aestivum</em> L.): a practical modeling approach. BMC Plant Biology",
+            "Lee H, Kang Y, Kim C*, Transcriptomic Plasticity Through Alternative Splicing Shapes Salt Stress Responses in Korean Sorghum, Plant Physiology and Biochemistry; 111060.".
         ]
     },
     {
