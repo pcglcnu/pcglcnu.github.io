@@ -760,6 +760,7 @@ footer strong{
 }
 .event-card-title{
   color:#111111;
+  min-height:85px;
 }
 .event-card-carousel{
   width:calc(100% - 36px);
