@@ -1022,3 +1022,11 @@ body.lightbox-open{
     width:min(100%,330px);
   }
 }
+
+/* Keep selected page content exactly 1 cm below the title divider. */
+.page-content-1cm{
+  padding-top:1cm;
+}
+.page-content-1cm > .member-section-title:first-of-type{
+  margin-top:0;
+}
