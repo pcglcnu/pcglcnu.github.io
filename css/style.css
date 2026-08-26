@@ -145,7 +145,11 @@ img{max-width:100%;}
   padding:2px 8px;border-radius:10px;display:inline-block;margin-bottom:.3rem;}
 .member-info h3{font-size:.98rem;margin-bottom:.3rem;}
 .member-info h3 em{font-style:normal;font-size:.78rem;color:#888;margin-left:.3rem;}
+.member-info{min-width:0;}
 .member-info p{font-size:.8rem;color:#666;}
+.member-info p:not(.member-note){display:flex;align-items:center;gap:4px;flex-wrap:nowrap;white-space:nowrap;font-size:.78rem;letter-spacing:-.01em;}
+.member-info p:not(.member-note) i{flex:0 0 auto;}
+.member-info p:not(.member-note) a{white-space:nowrap;}
 .member-info a{color:var(--green);}
 .member-note{font-size:.75rem;color:#999;margin-top:.2rem;}
 .alumni-wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:900px;}
