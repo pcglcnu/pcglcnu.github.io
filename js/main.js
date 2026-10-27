@@ -119,15 +119,27 @@ fetch(`publications.json?v=${Date.now()}`, { cache: "no-store" })
 
   function openLightbox(card) {
     const titleText = card.querySelector(".event-card-title")?.innerText.trim() || "Event photos";
-    const images = card.querySelectorAll(".event-card-carousel-slide img");
-    if (!images.length) return;
+    const media = card.querySelectorAll(".event-card-carousel-slide img, .event-card-carousel-slide video");
+    if (!media.length) return;
 
     title.textContent = titleText;
     gallery.innerHTML = "";
-    images.forEach((sourceImage) => {
+    media.forEach((sourceMedia) => {
+      if (sourceMedia.tagName === "VIDEO") {
+        const galleryVideo = document.createElement("video");
+        galleryVideo.src = sourceMedia.currentSrc || sourceMedia.querySelector("source")?.src || sourceMedia.src;
+        galleryVideo.controls = true;
+        galleryVideo.autoplay = true;
+        galleryVideo.playsInline = true;
+        galleryVideo.preload = "metadata";
+        galleryVideo.setAttribute("aria-label", sourceMedia.getAttribute("aria-label") || titleText);
+        gallery.appendChild(galleryVideo);
+        return;
+      }
+
       const galleryImage = document.createElement("img");
-      galleryImage.src = sourceImage.currentSrc || sourceImage.src;
-      galleryImage.alt = sourceImage.alt || titleText;
+      galleryImage.src = sourceMedia.currentSrc || sourceMedia.src;
+      galleryImage.alt = sourceMedia.alt || titleText;
       gallery.appendChild(galleryImage);
     });
     lightbox.classList.add("open");
@@ -146,6 +158,12 @@ fetch(`publications.json?v=${Date.now()}`, { cache: "no-store" })
     if (!preview) return;
     preview.addEventListener("click", () => {
       openLightbox(card);
+    });
+    preview.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openLightbox(card);
+      }
     });
   });
 
